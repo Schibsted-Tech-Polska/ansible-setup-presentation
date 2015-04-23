@@ -1,0 +1,34 @@
+---
+- name: base
+  gather_facts: false
+  hosts: example
+#  sudo: true
+#
+#  roles:
+#    - role: ../ssh
+#
+#    - role: ../mc
+#
+#    - role: ../apache
+#
+#    - role: ../php
+#
+#  tasks:
+#    - name: insert line to file
+#      lineinfile: >
+#        create=yes
+#        dest=/var/www/phpinfo.php
+#        force=yes
+#        group=root
+#        line="<?php phpinfo();"
+#        mode="0644"
+#        owner=root
+#        regexp="<?php"
+#      notify:
+#        - restart apache
+#
+#  handlers:
+#    - name: restart apache
+#      service: >
+#        name=apache2
+#        state=restarted

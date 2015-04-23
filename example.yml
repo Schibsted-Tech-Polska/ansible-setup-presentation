@@ -1,0 +1,6 @@
+---
+- name: example
+  gather_facts: true
+  hosts: example
+
+- include: roles/_example/base.yml

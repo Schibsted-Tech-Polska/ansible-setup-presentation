@@ -1,0 +1,20 @@
+---
+apache_modules:
+  - headers
+  - rewrite
+php_modules:
+  - php5-cli
+  - php5-common
+ssh_users:
+  - name: example
+    group: example
+    home: /home/example
+    shell: /bin/bash
+    keys:
+      - user.id_rsa.pub
+  - name: vagrant
+    group: vagrant
+    home: /home/vagrant
+    shell: /bin/bash
+    keys:
+      - user.id_rsa.pub
