@@ -1,6 +1,6 @@
 ---
 - name: example
   gather_facts: true
-  hosts: projectx
+  hosts: example
 
 - include: roles/_example/base.yml

@@ -5,6 +5,9 @@ apache_modules:
 php_modules:
   - php5-cli
   - php5-common
+#ssh_parameters:
+#  ListenAddress: 0.0.0.0
+#  Port: 22
 ssh_users:
   - name: example
     group: example

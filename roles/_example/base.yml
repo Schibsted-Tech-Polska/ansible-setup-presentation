@@ -1,7 +1,7 @@
 ---
 - name: base
   gather_facts: false
-  hosts: projectx
+  hosts: example
 #  sudo: true
 #
 #  roles:
