@@ -13,6 +13,8 @@
 #
 #    - role: ../php
 #
+#    - role: ../mysql
+#
 #  tasks:
 #    - name: insert line to file
 #      lineinfile: >

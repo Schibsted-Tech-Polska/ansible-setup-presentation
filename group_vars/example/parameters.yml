@@ -2,9 +2,21 @@
 apache_modules:
   - headers
   - rewrite
+mysql_databases:
+  - name: database
+    users:
+      - name: user
+        host: localhost
+        password: pass
+        priv: ALL
+      - name: user_ro
+        host: "%"
+        password: pass_ro
+        priv: SELECT
 php_modules:
   - php5-cli
   - php5-common
+#  - php5-mysqlnd
 #ssh_parameters:
 #  ListenAddress: 0.0.0.0
 #  Port: 22
